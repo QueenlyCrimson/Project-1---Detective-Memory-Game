@@ -1,0 +1,10 @@
+html {
+  color: gray;
+}
+
+
+.play-area {
+  height: 500px;
+  width: 500px;
+  color: rgb(0, 0, 255);
+}
