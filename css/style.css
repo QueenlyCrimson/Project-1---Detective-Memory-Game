@@ -1,10 +1,55 @@
-html {
-  color: gray;
+body {
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .play-area {
-  height: 500px;
-  width: 500px;
-  color: rgb(0, 0, 255);
+  height: 100vh;
+  width: 100vh;
+  background-color: brown;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.smard {
+  height: 14vh;
+  width: 7vh;
+  background-color: black;
+  border: 2px gray solid;
+  margin:auto;
+  text-align: center;
+  display:flex;
+  font-size:13vh;
+}
+
+.flipped {
+  background-color: red;
+} 
+
+.console {
+  height: 40vh;
+  width: 70vh;
+  background-color: green;
+  position: absolute;
+  top: 2%;
+  text-align:center;
+  font-size: 12vh;
+}
+
+.start {
+  top: 50vh;
+  left: 50vh;
+  position: absolute;
+  margin: auto;
+  background-color: maroon;
+  border: 2px white solid;
+  height: 10vh;
+  width: 30vh;
+  font-size: 8vh;
+  text-align: center;
+  color: white;
+  text-decoration: underline white;
 }
