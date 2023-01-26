@@ -14,15 +14,20 @@ body {
   flex-wrap: wrap;
 }
 
+img {
+  width: 7vh;
+  height: 7vh;
+}
+
 .smard {
   height: 14vh;
   width: 7vh;
   background-color: black;
   border: 2px gray solid;
   margin:auto;
-  text-align: center;
+  
   display:flex;
-  font-size:13vh;
+  font-size:0;
 }
 
 .flipped {
