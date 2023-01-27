@@ -7,3 +7,28 @@
 ## Overview
 
 The Detective Memory Game features 10 cards which can be clicked and matched with other cards. It also features a shuffle button to reshuffle the game when finished.
+
+## Features
+
+-5 Unique Card Designs
+
+-Shuffle Button and Function
+
+-Noir Styling
+
+-Clickable and Matchable Cards
+
+-Hovering over Cards makes them extend if they're matchable
+
+-Cannot flip the same card twice in a row
+
+## Credits
+
+Images were sourced from the following links:
+https://www.opentable.com/gilt-bar
+https://free4kwallpapers.com/
+https://toppng.com/
+https://www.flaticon.com/
+https://www.pngfind.com/
+https://www.nicepng.com/
+https://www.emojipng.com/

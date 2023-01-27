@@ -8,6 +8,7 @@ let shuffleArray = (array) => {
   stagedSet = array
 } //Fisher Yates Algorithm my beloved
 
+//the elements that will get shuffled into the board
 let cardDivObject = [
   `<div class="card smard">1<img src ="images/620270.png"></img></div>`,
   `<div class="card smard">1<img src ="images/620270.png"></img></div>`,
@@ -21,8 +22,11 @@ let cardDivObject = [
   `<div class="card smard">5<img src ="images/pngfind.com-biohazard-symbol-png-265735.png"></img></div>`
 ]
 
+//the cardDivObject gets shuffled into here, and then this gets pasted
+//onto the board
 let stagedSet = []
 
+//shuffles and starts the game
 let shuffleFunction = () => {
   shuffleArray(cardDivObject)
   playArea.innerHTML = ''
@@ -33,6 +37,8 @@ let shuffleFunction = () => {
   startGame()
 }
 
+//the variables for all the currently on screen elements and divs
+//the cards need to be assigned later
 let shuffleButton = document.querySelector('.shuffle')
 
 let playArea = document.querySelector('.play-area')
@@ -43,8 +49,11 @@ let matchBoard = document.querySelector('.match')
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max)
-} //thank you mozilla
+} //thank you mozilla credits to mozilla for this piece of code
 
+//i was having trouble figuring out why the addeventlisteners weren't
+//listening and then i realized i needed to initialize them
+//on the same scope and at the same time
 let startGame = () => {
   let c1 = '0'
   let c2 = '0'
@@ -53,6 +62,7 @@ let startGame = () => {
   let cardCount = 0
   let winCondition = 10
 
+  //the variable for every card
   let cardA1 = {
     ref: document.querySelectorAll('.card')[0],
     wValue: 0,
@@ -104,6 +114,10 @@ let startGame = () => {
     mValue: 0
   }
 
+  //this exists so that i can keep the player from clicking
+  //on other cards while a no match event is going on
+  //a for loop goes through this array and changes a certain value so
+  //it cant be clicked on
   let cardArray = [
     cardA1,
     cardA2,
@@ -117,6 +131,8 @@ let startGame = () => {
     cardE2
   ]
 
+  //flips the cards and holds onto the data for the two most recent
+  //cards to see if they match or not
   let flipFunction = (card) => {
     if (card.wValue == 0) {
       if (card.mValue == 0) {
@@ -124,7 +140,6 @@ let startGame = () => {
         card.ref.classList.toggle('flipped')
         if (turnNum % 2 == 0) {
           c2 = card
-
           checkFunction(card)
         } else {
           c1 = card
@@ -134,6 +149,7 @@ let startGame = () => {
     }
   }
 
+  //wins the game
   let winGame = () => {
     msgBoard.innerText = `Game Win!`
   }
@@ -147,6 +163,9 @@ let startGame = () => {
     }, 1500)
   }
 
+  //by far the most convoluted bit, i have it so that it looks
+  //at both c1 and c2 to compare them and see if their invisible text
+  //is the same
   let checkFunction = (card) => {
     if (c1.ref.innerText === c2.ref.innerText) {
       cardCount++
@@ -187,6 +206,7 @@ let startGame = () => {
     }
   }
 
+  //the plethora of event listeners
   cardA1.ref.addEventListener('click', () => {
     flipFunction(cardA1)
   })
