@@ -57,6 +57,19 @@ img {
   border: 2px white solid;
 }
 
+.instructions {
+  height: 8vh;
+  width: 40vh;
+  background-color: maroon;
+  position:absolute;
+  top: 50%;
+  left: 60%;
+  border: 2px white solid;
+  font-size: 3vh;
+  color: white;
+  text-align: center;
+}
+
 .match {
   height: 18vh;
   width: 40vh;
