@@ -12,6 +12,7 @@ body {
   background-color: brown;
   display:flex;
   flex-wrap: wrap;
+  border: 0.5vh black solid;
 }
 
 img {
@@ -25,9 +26,46 @@ img {
   background-color: black;
   border: 2px gray solid;
   margin:auto;
-  
   display:flex;
   font-size:0;
+}
+
+.card:hover {
+  height: 15vh;
+  width: 8vh;
+  transition: all 0.5s;
+}
+
+.background {
+  z-index: -1;
+  height: 110%;
+  width: 100%;
+  position: absolute;
+}
+
+.background-index {
+  z-index: -1;
+  height: 200%;
+  width: 100%;
+  position: absolute;
+}
+
+.title {
+  font-size: 17vh;
+  color: white;
+  background-color: maroon;
+  border: 2px white solid;
+}
+
+.match {
+  height: 18vh;
+  width: 40vh;
+  background-color: green;
+  border: 0.1vh black solid;
+  position:absolute;
+  top: 70%;
+  font-size: 8vh;
+  text-align: center;
 }
 
 .flipped {
@@ -42,6 +80,7 @@ img {
   top: 2%;
   text-align:center;
   font-size: 12vh;
+  border: 0.1vh black solid;
 }
 
 .start {
@@ -57,4 +96,16 @@ img {
   text-align: center;
   color: white;
   text-decoration: underline white;
+}
+
+.shuffle {
+  background-color: green;
+  height: 7vh;
+  width: 15vh;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  border: 0.1vh black solid;
+  text-align: center;
+  font-size: 5vh;
 }
