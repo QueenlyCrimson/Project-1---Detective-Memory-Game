@@ -22,6 +22,10 @@ The Detective Memory Game features 10 cards which can be clicked and matched wit
 
 -Cannot flip the same card twice in a row
 
+## Coming Updates
+
+-Effect every time a match is made
+
 ## Credits
 
 Images were sourced from the following links:
