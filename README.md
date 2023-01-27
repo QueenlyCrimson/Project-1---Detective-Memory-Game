@@ -26,7 +26,11 @@ The Detective Memory Game features 10 cards which can be clicked and matched wit
 
 -Effect every time a match is made
 
-## Credits
+-Difficulty Scaling
+
+-Hard Mode
+
+# Credits
 
 Images were sourced from the following links:
 https://www.opentable.com/gilt-bar
